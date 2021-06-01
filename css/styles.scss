@@ -185,12 +185,25 @@ nav {
 
 @media (max-width: 415px) {
   .intro {
-    margin-top: 3rem;
+    margin-top: 2rem;
     .h-txt-body {
       font-size: 44px;
     }
     .txt {
       font-size: 30px;
+    }
+  }
+  .projects-and-work {
+    .projects-header {
+      font-size: 52px;
+    }
+    .work-header {
+      font-size: 52px;
+    }
+  }
+  .about {
+    .about-header {
+      font-size: 52px;
     }
   }
 }
