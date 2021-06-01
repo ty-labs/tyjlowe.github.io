@@ -1,44 +1,36 @@
-.txt {
-  color: #FFCB47;
-  border-right: 0.2rem solid #FFCB47;
-  font-size: 75px;
-  letter-spacing: 2px; }
-
-.h-txt-body {
-  color: #FFCB47;
-  border-right: 0.2rem solid #FFCB47;
-  font-size: 100px;
-  letter-spacing: 2px; }
-
+/** Define color vars **/
+/** Style HTML doc **/
 body {
-  padding-top: 4rem;
   font-family: 'Ropa Sans', sans-serif;
   background-color: #262833; }
 
-.navbar-color {
+nav {
   background-color: #FFCB47; }
-
-#contactButton {
-  text-decoration: none; }
-
-nav .my-color {
-  font-size: 20px;
-  letter-spacing: 3px;
-  color: #262833 !important; }
-
-nav .my-color:hover {
-  color: #7E8CE0 !important; }
-
-nav .my-color-active {
-  color: #36C7D0 !important; }
+  nav .my-color {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    color: #262833 !important; }
+  nav .my-color:hover {
+    color: #7E8CE0 !important; }
+  nav .my-color-active {
+    color: #36C7D0 !important; }
+  nav #contact-button {
+    text-decoration: none; }
 
 .intro {
   background-color: #262833;
+  color: #FFCB47;
+  margin-top: 6rem;
   min-height: 100vh;
   padding-top: 125px; }
-
-.navbar-toggler {
-  z-index: 100; }
+  .intro .h-txt-body {
+    border-right: 0.2rem solid #FFCB47;
+    font-size: 100px;
+    letter-spacing: 2px; }
+  .intro .txt {
+    border-right: 0.2rem solid #FFCB47;
+    font-size: 75px;
+    letter-spacing: 2px; }
 
 .about {
   background-color: #4ACFAC; }
@@ -143,18 +135,20 @@ nav .my-color-active {
     font-size: large; } }
 
 @media (max-width: 756px) {
-  .txt {
-    font-size: 50px; }
-  .h-txt-body {
-    font-size: 62px; } }
+  .intro {
+    margin-top: 4rem; }
+    .intro .h-txt-body {
+      font-size: 62px; }
+    .intro .txt {
+      font-size: 50px; } }
 
 @media (max-width: 415px) {
-  .txt {
-    font-size: 30px; }
-  .h-txt-body {
-    font-size: 45px; }
-  .about-text {
-    font-size: 18px; } }
+  .intro {
+    margin-top: 4rem; }
+    .intro .h-txt-body {
+      font-size: 44px; }
+    .intro .txt {
+      font-size: 30px; } }
 
 @media (max-width: 768px) {
   .carousel-inner {

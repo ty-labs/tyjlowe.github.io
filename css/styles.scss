@@ -1,3 +1,4 @@
+/** Define color vars **/
 $dark: #262833;
 $gld-secondary: #FFCB47;
 $green-secondary: #4ACFAC;
@@ -5,56 +6,46 @@ $purp-secondary: #7E8CE0;
 $blue-secondary: #36C7D0;
 $smn-secondary: #FFA48E;
 
-.txt {
-  color: $gld-secondary;
-  border-right: 0.2rem solid $gld-secondary;
-  font-size: 75px;
-  letter-spacing: 2px;
-}
-
-.h-txt-body {
-  color: $gld-secondary;
-  border-right: 0.2rem solid $gld-secondary;
-  font-size: 100px;
-  letter-spacing: 2px;
-}
-
+/** Style HTML doc **/
 body {
-  padding-top: 4rem;
   font-family: 'Ropa Sans', sans-serif;
   background-color: $dark;
 }
 
-.navbar-color {
+nav {  
   background-color: $gld-secondary;
-}
-
-#contactButton {
-  text-decoration: none;
-}
-
-nav .my-color {
-  font-size: 20px;
-  letter-spacing: 3px;
-  color: $dark !important; 
-}
-
-nav .my-color:hover {
-  color: $purp-secondary !important;
-}
-
-nav .my-color-active {
-  color: $blue-secondary !important;
+  .my-color {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    color: $dark !important;
+  }
+  .my-color:hover {
+    color: $purp-secondary !important;
+  }
+  .my-color-active {
+    color: $blue-secondary !important;
+  }
+  #contact-button {
+    text-decoration: none;
+  }
 }
 
 .intro {
   background-color: $dark;
+  color: $gld-secondary;
+  margin-top: 6rem;
   min-height: 100vh;
   padding-top: 125px;
-}
-
-.navbar-toggler {
-  z-index: 100;
+  .h-txt-body {
+    border-right: 0.2rem solid $gld-secondary;
+    font-size: 100px;
+    letter-spacing: 2px;
+  }
+  .txt {
+    border-right: 0.2rem solid $gld-secondary;
+    font-size: 75px;
+    letter-spacing: 2px;
+  }
 }
 
 .about {
@@ -206,23 +197,26 @@ nav .my-color-active {
 }
 
 @media (max-width: 756px) {
-  .txt {
-    font-size: 50px;
-  }
-  .h-txt-body{
-    font-size: 62px;
+  .intro {
+    margin-top: 4rem;
+    .h-txt-body {
+      font-size: 62px;
+    }
+    .txt {
+      font-size: 50px;
+    }
   }
 }
 
 @media (max-width: 415px) {
-  .txt {
-    font-size: 30px;
-  }
-  .h-txt-body {
-    font-size: 45px;
-  }
-  .about-text {
-    font-size: 18px;
+  .intro {
+    margin-top: 4rem;
+    .h-txt-body {
+      font-size: 44px;
+    }
+    .txt {
+      font-size: 30px;
+    }
   }
 }
 
