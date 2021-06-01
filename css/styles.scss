@@ -6,6 +6,17 @@ $purp-secondary: #7E8CE0;
 $blue-secondary: #36C7D0;
 $smn-secondary: #FFA48E;
 
+/** mixins for repeated components **/
+@mixin right-bottom-left-border($color) {
+  border-right: 0.175rem solid $color;
+  border-bottom: 0.175rem solid $color;
+  border-left: 0.175rem solid $color;
+}
+
+@mixin full-border($color) {
+  border: 0.2rem solid $color;
+}
+
 /** Style HTML doc **/
 body {
   font-family: 'Ropa Sans', sans-serif;
@@ -63,11 +74,11 @@ nav {
     font-size: 20px;
   }
   .about-image {
-    border: 0.2rem solid $dark;
+    @include full-border($dark);
   }
 }
 
-.projects {
+.projects-and-work {
   background-color: $dark;
   .projects-header {
     color: $blue-secondary;
@@ -90,12 +101,10 @@ nav {
     .card-body {
       @include right-bottom-left-border($purp-secondary);
       background-color: white;
-
       ul li {
         list-style-type: square;
       }
     }
-
   }
   #seperator {
     #blue-border {
@@ -131,27 +140,14 @@ nav {
       }
     }
   }
-}
-
-/** mixins for repeated components **/
-@mixin right-bottom-left-border($color) {
-  border-right: 0.175rem solid $color;
-  border-bottom: 0.175rem solid $color;
-  border-left: 0.175rem solid $color;
-}
-
-@mixin full-border($color) {
-  border: 0.2rem solid %color;
-}
-
-/** make the carousel controls darker **/
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+  /** make the carousel controls darker **/
+  .carousel-control-next,
+  .carousel-control-prev /*, .carousel-indicators */ {
+      filter: invert(100%);
+  }
+  .carousel-indicators li {
     filter: invert(100%);
-}
-
-.carousel-indicators li {
-  filter: invert(100%);
+  }
 }
 
 .footer {
@@ -167,10 +163,10 @@ nav {
 
 /** Media Queries **/
 @media (max-width: 779px) {
-  .work-card .card .card-header h5 button {
+  .projects-and-work .work-card .card .card-header h5 button {
     font-size: large;
   }
-  .project-card .card .card-header h5 button {
+  .projects-and-work .project-card .card .card-header h5 button {
     font-size: large;
   }
 }
@@ -202,5 +198,24 @@ nav {
 @media (max-width: 768px) {
   .carousel-inner {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .intro {
+    margin-top: 2rem;
+  }
+  .projects-and-work {
+    .projects-header {
+      font-size: 45px;
+    }
+    .work-header {
+      font-size: 45px;
+    }
+  }
+  .about {
+    .about-header {
+      font-size: 45px;
+    }
   }
 }

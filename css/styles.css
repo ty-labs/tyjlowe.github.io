@@ -1,4 +1,5 @@
 /** Define color vars **/
+/** mixins for repeated components **/
 /** Style HTML doc **/
 body {
   font-family: 'Ropa Sans', sans-serif;
@@ -47,74 +48,62 @@ nav {
   .about .about-image {
     border: 0.2rem solid #262833; }
 
-.projects {
-  background-color: #262833; }
-  .projects .projects-header {
+.projects-and-work {
+  background-color: #262833;
+  /** make the carousel controls darker **/ }
+  .projects-and-work .projects-header {
     color: #36C7D0;
     font-weight: 1000;
     font-size: 60px;
     letter-spacing: 2px;
     border-bottom: 0.2rem solid #36C7D0; }
-
-.work-header {
-  color: #7E8CE0;
-  font-weight: 1000;
-  font-size: 60px;
-  letter-spacing: 2px;
-  border-bottom: 0.2rem solid #7E8CE0; }
-
-/** make the carousel controls darker **/
-.carousel-control-next,
-.carousel-control-prev {
-  filter: invert(100%); }
-
-.carousel-indicators li {
-  filter: invert(100%); }
-
-.carousel-caption {
-  color: #262833; }
-  .carousel-caption p {
-    color: #262833; }
-
-.project-card .card {
-  background-color: #262833; }
-  .project-card .card .card-header {
-    border: 0.2rem solid #36C7D0;
-    text-align: center; }
-    .project-card .card .card-header h5 button {
-      color: #36C7D0;
-      font-size: larger;
-      font-weight: 500; }
-  .project-card .card .card-body {
-    border-right: 0.175rem solid #7E8CE0;
-    border-bottom: 0.175rem solid #7E8CE0;
-    border-left: 0.175rem solid #7E8CE0;
-    background-color: white; }
-    .project-card .card .card-body ul li {
-      list-style-type: square; }
-
-#seperator #blue-border {
-  border-bottom: 0.15rem solid #36C7D0; }
-
-#seperator #purp-border {
-  border-bottom: 0.15rem solid #7E8CE0; }
-
-.work-card .card {
-  background-color: #262833; }
-  .work-card .card .card-header {
-    border: 0.2rem solid #7E8CE0;
-    text-align: center; }
-    .work-card .card .card-header h5 button {
-      color: #7E8CE0;
-      font-size: larger;
-      font-weight: 500; }
-  .work-card .card .card-body {
-    border-right: 0.175rem solid #36C7D0;
-    border-bottom: 0.175rem solid #36C7D0;
-    border-left: 0.175rem solid #36C7D0;
-    background-color: white; }
-    .work-card .card .card-body ul li {
-      list-style-type: square; }
+  .projects-and-work .project-card .card {
+    background-color: #262833; }
+    .projects-and-work .project-card .card .card-header {
+      border: 0.2rem solid #36C7D0;
+      text-align: center; }
+      .projects-and-work .project-card .card .card-header h5 button {
+        color: #36C7D0;
+        font-size: larger;
+        font-weight: 500; }
+    .projects-and-work .project-card .card .card-body {
+      border-right: 0.175rem solid #7E8CE0;
+      border-bottom: 0.175rem solid #7E8CE0;
+      border-left: 0.175rem solid #7E8CE0;
+      background-color: white; }
+      .projects-and-work .project-card .card .card-body ul li {
+        list-style-type: square; }
+  .projects-and-work #seperator #blue-border {
+    border-bottom: 0.15rem solid #36C7D0; }
+  .projects-and-work #seperator #purp-border {
+    border-bottom: 0.15rem solid #7E8CE0; }
+  .projects-and-work .work-header {
+    color: #7E8CE0;
+    font-weight: 1000;
+    font-size: 60px;
+    letter-spacing: 2px;
+    border-bottom: 0.2rem solid #7E8CE0; }
+  .projects-and-work .work-card .card {
+    background-color: #262833; }
+    .projects-and-work .work-card .card .card-header {
+      border: 0.2rem solid #7E8CE0;
+      text-align: center; }
+      .projects-and-work .work-card .card .card-header h5 button {
+        color: #7E8CE0;
+        font-size: larger;
+        font-weight: 500; }
+    .projects-and-work .work-card .card .card-body {
+      border-right: 0.175rem solid #36C7D0;
+      border-bottom: 0.175rem solid #36C7D0;
+      border-left: 0.175rem solid #36C7D0;
+      background-color: white; }
+      .projects-and-work .work-card .card .card-body ul li {
+        list-style-type: square; }
+  .projects-and-work .carousel-control-next,
+  .projects-and-work .carousel-control-prev {
+    filter: invert(100%); }
+  .projects-and-work .carousel-indicators li {
+    filter: invert(100%); }
 
 .footer {
   background-color: #4ACFAC; }
@@ -124,10 +113,11 @@ nav {
   .footer .footer-logo {
     vertical-align: baseline; }
 
+/** Media Queries **/
 @media (max-width: 779px) {
-  .work-card .card .card-header h5 button {
+  .projects-and-work .work-card .card .card-header h5 button {
     font-size: large; }
-  .project-card .card .card-header h5 button {
+  .projects-and-work .project-card .card .card-header h5 button {
     font-size: large; } }
 
 @media (max-width: 756px) {
@@ -149,3 +139,13 @@ nav {
 @media (max-width: 768px) {
   .carousel-inner {
     width: 100% !important; } }
+
+@media (max-width: 370px) {
+  .intro {
+    margin-top: 2rem; }
+  .projects-and-work .projects-header {
+    font-size: 45px; }
+  .projects-and-work .work-header {
+    font-size: 45px; }
+  .about .about-header {
+    font-size: 45px; } }
