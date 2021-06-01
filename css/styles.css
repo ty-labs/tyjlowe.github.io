@@ -34,20 +34,27 @@ nav {
 
 .about {
   background-color: #4ACFAC; }
+  .about .about-header {
+    color: #262833;
+    font-weight: 1000;
+    font-size: 60px;
+    letter-spacing: 2px;
+    border-bottom: 0.2rem solid #262833; }
+  .about .about-text {
+    color: #262833;
+    font-weight: 500;
+    font-size: 20px; }
+  .about .about-image {
+    border: 0.2rem solid #262833; }
 
-.about-header {
-  color: #262833;
-  font-weight: 1000;
-  font-size: 60px;
-  letter-spacing: 2px;
-  border-bottom: 0.2rem solid #262833; }
-
-.projects-header {
-  color: #36C7D0;
-  font-weight: 1000;
-  font-size: 60px;
-  letter-spacing: 2px;
-  border-bottom: 0.2rem solid #36C7D0; }
+.projects {
+  background-color: #262833; }
+  .projects .projects-header {
+    color: #36C7D0;
+    font-weight: 1000;
+    font-size: 60px;
+    letter-spacing: 2px;
+    border-bottom: 0.2rem solid #36C7D0; }
 
 .work-header {
   color: #7E8CE0;
@@ -55,17 +62,6 @@ nav {
   font-size: 60px;
   letter-spacing: 2px;
   border-bottom: 0.2rem solid #7E8CE0; }
-
-.about-text {
-  color: #262833;
-  font-weight: 500;
-  font-size: 20px; }
-
-.about-image {
-  border: 0.2rem solid #262833; }
-
-.projects {
-  background-color: #262833; }
 
 /** make the carousel controls darker **/
 .carousel-control-next,
