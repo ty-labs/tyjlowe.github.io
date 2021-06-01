@@ -1,5 +1,5 @@
 /** Define color vars **/
-/** mixins for repeated components **/
+/** Mixins for repeated components **/
 /** Style HTML doc **/
 body {
   font-family: 'Ropa Sans', sans-serif;
@@ -9,7 +9,7 @@ nav {
   background-color: #FFCB47; }
   nav .my-color {
     font-size: 20px;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     color: #262833 !important; }
   nav .my-color:hover {
     color: #7E8CE0 !important; }
@@ -27,11 +27,11 @@ nav {
   .intro .h-txt-body {
     border-right: 0.2rem solid #FFCB47;
     font-size: 100px;
-    letter-spacing: 2px; }
+    letter-spacing: 3.5px; }
   .intro .txt {
     border-right: 0.2rem solid #FFCB47;
     font-size: 75px;
-    letter-spacing: 2px; }
+    letter-spacing: 1.5px; }
 
 .about {
   background-color: #4ACFAC; }
@@ -44,9 +44,11 @@ nav {
   .about .about-text {
     color: #262833;
     font-weight: 500;
-    font-size: 18px; }
+    font-size: 19px; }
   .about .about-image {
     border: 0.2rem solid #262833; }
+  .about #bolded {
+    font-size: 20px; }
 
 .projects-and-work {
   background-color: #262833;

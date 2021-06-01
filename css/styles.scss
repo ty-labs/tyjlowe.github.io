@@ -6,7 +6,7 @@ $purp-secondary: #7E8CE0;
 $blue-secondary: #36C7D0;
 $smn-secondary: #FFA48E;
 
-/** mixins for repeated components **/
+/** Mixins for repeated components **/
 @mixin right-bottom-left-border($color) {
   border-right: 0.175rem solid $color;
   border-bottom: 0.175rem solid $color;
@@ -27,7 +27,7 @@ nav {
   background-color: $gld-secondary;
   .my-color {
     font-size: 20px;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     color: $dark !important;
   }
   .my-color:hover {
@@ -50,12 +50,12 @@ nav {
   .h-txt-body {
     border-right: 0.2rem solid $gld-secondary;
     font-size: 100px;
-    letter-spacing: 2px;
+    letter-spacing: 3.5px;
   }
   .txt {
     border-right: 0.2rem solid $gld-secondary;
     font-size: 75px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -71,10 +71,13 @@ nav {
   .about-text {
     color: $dark;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 19px;
   }
   .about-image {
     @include full-border($dark);
+  }
+  #bolded {
+    font-size: 20px;
   }
 }
 
@@ -142,7 +145,7 @@ nav {
   }
   /** make the carousel controls darker **/
   .carousel-control-next,
-  .carousel-control-prev /*, .carousel-indicators */ {
+  .carousel-control-prev {
       filter: invert(100%);
   }
   .carousel-indicators li {
