@@ -1,23 +1,31 @@
-/** Define color vars **/
-/** Mixins for repeated components **/
-/** Style HTML doc **/
+/** Combined partials to create main styles **/
+/** Color theme for the site **/
+/** Overarching styles for site **/
 body {
   font-family: 'Ropa Sans', sans-serif;
   background-color: #262833; }
 
+/** Color theme for the site **/
+/** Navbar styles **/
 nav {
   background-color: #FFCB47; }
   nav .my-color {
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
+    padding: 0px;
+    margin: 10px 10px;
     color: #262833 !important; }
-  nav .my-color:hover {
-    color: #7E8CE0 !important; }
+    nav .my-color:not(.my-color-active):hover {
+      color: #7E8CE0 !important;
+      border-bottom: 3px solid #7E8CE0; }
   nav .my-color-active {
-    color: #36C7D0 !important; }
+    color: #2db7c0 !important;
+    border-bottom: 3px solid #2db7c0; }
   nav #contact-button {
     text-decoration: none; }
 
+/** Color theme for the site **/
+/** Styles for the intro section **/
 .intro {
   background-color: #262833;
   color: #FFCB47;
@@ -33,6 +41,9 @@ nav {
     font-size: 75px;
     letter-spacing: 1.5px; }
 
+/** Color theme for the site **/
+/** The few mixins used **/
+/** Styles for the about section **/
 .about {
   background-color: #4ACFAC; }
   .about .about-header {
@@ -50,63 +61,61 @@ nav {
   .about #bolded {
     font-size: 20px; }
 
+/** Color theme for the site **/
+/** The few mixins used **/
+/** Styles for project/work section **/
 .projects-and-work {
   background-color: #262833;
   /** make the carousel controls darker **/ }
+  .projects-and-work h2 {
+    font-weight: 1000;
+    font-size: 60px;
+    letter-spacing: 2px; }
   .projects-and-work .projects-header {
     color: #36C7D0;
-    font-weight: 1000;
-    font-size: 60px;
-    letter-spacing: 2px;
     border-bottom: 0.2rem solid #36C7D0; }
-  .projects-and-work .project-card .card {
-    background-color: #262833; }
-    .projects-and-work .project-card .card .card-header {
-      border: 0.2rem solid #36C7D0;
-      text-align: center; }
-      .projects-and-work .project-card .card .card-header h5 button {
-        color: #36C7D0;
-        font-size: larger;
-        font-weight: 500; }
-    .projects-and-work .project-card .card .card-body {
-      border-right: 0.175rem solid #7E8CE0;
-      border-bottom: 0.175rem solid #7E8CE0;
-      border-left: 0.175rem solid #7E8CE0;
-      background-color: white; }
-      .projects-and-work .project-card .card .card-body ul li {
-        list-style-type: square; }
-  .projects-and-work #seperator #blue-border {
-    border-bottom: 0.15rem solid #36C7D0; }
-  .projects-and-work #seperator #purp-border {
-    border-bottom: 0.15rem solid #7E8CE0; }
   .projects-and-work .work-header {
     color: #7E8CE0;
-    font-weight: 1000;
-    font-size: 60px;
-    letter-spacing: 2px;
     border-bottom: 0.2rem solid #7E8CE0; }
-  .projects-and-work .work-card .card {
+  .projects-and-work .card {
     background-color: #262833; }
-    .projects-and-work .work-card .card .card-header {
-      border: 0.2rem solid #7E8CE0;
+    .projects-and-work .card .card-header {
       text-align: center; }
-      .projects-and-work .work-card .card .card-header h5 button {
-        color: #7E8CE0;
+      .projects-and-work .card .card-header h5 button {
         font-size: larger;
         font-weight: 500; }
-    .projects-and-work .work-card .card .card-body {
-      border-right: 0.175rem solid #36C7D0;
-      border-bottom: 0.175rem solid #36C7D0;
-      border-left: 0.175rem solid #36C7D0;
-      background-color: white; }
-      .projects-and-work .work-card .card .card-body ul li {
+    .projects-and-work .card .card-body {
+      background-color: #F5F5F5; }
+      .projects-and-work .card .card-body ul li {
         list-style-type: square; }
+  .projects-and-work .project-card .card .card-header {
+    border: 0.2rem solid #36C7D0; }
+    .projects-and-work .project-card .card .card-header h5 button {
+      color: #36C7D0; }
+  .projects-and-work .project-card .card .card-body {
+    border-right: 0.175rem solid #7E8CE0;
+    border-bottom: 0.175rem solid #7E8CE0;
+    border-left: 0.175rem solid #7E8CE0; }
+  .projects-and-work .work-card .card .card-header {
+    border: 0.2rem solid #7E8CE0; }
+    .projects-and-work .work-card .card .card-header h5 button {
+      color: #7E8CE0; }
+  .projects-and-work .work-card .card .card-body {
+    border-right: 0.175rem solid #36C7D0;
+    border-bottom: 0.175rem solid #36C7D0;
+    border-left: 0.175rem solid #36C7D0; }
+  .projects-and-work #separator #blue-border {
+    border-bottom: 0.15rem solid #36C7D0; }
+  .projects-and-work #separator #purp-border {
+    border-bottom: 0.15rem solid #7E8CE0; }
   .projects-and-work .carousel-control-next,
   .projects-and-work .carousel-control-prev {
     filter: invert(100%); }
   .projects-and-work .carousel-indicators li {
     filter: invert(100%); }
 
+/** Color theme for the site **/
+/** Styles for the footer **/
 .footer {
   background-color: #4ACFAC; }
   .footer .footer-link {

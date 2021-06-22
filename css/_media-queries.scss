@@ -1,0 +1,71 @@
+/** Media Queries **/
+@media (max-width: 779px) {
+  .projects-and-work .work-card .card .card-header h5 button {
+    font-size: large;
+  }
+  .projects-and-work .project-card .card .card-header h5 button {
+    font-size: large;
+  }
+}
+
+@media (max-width: 756px) {
+  .intro {
+    margin-top: 4rem;
+    .h-txt-body {
+      font-size: 62px;
+    }
+    .txt {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .intro {
+    margin-top: 2rem;
+    .h-txt-body {
+      font-size: 44px;
+    }
+    .txt {
+      font-size: 30px;
+    }
+  }
+  .projects-and-work {
+    .projects-header {
+      font-size: 52px;
+    }
+    .work-header {
+      font-size: 52px;
+    }
+  }
+  .about {
+    .about-header {
+      font-size: 52px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .intro {
+    margin-top: 2rem;
+  }
+  .projects-and-work {
+    .projects-header {
+      font-size: 45px;
+    }
+    .work-header {
+      font-size: 45px;
+    }
+  }
+  .about {
+    .about-header {
+      font-size: 45px;
+    }
+  }
+}

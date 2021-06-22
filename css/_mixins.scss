@@ -1,0 +1,10 @@
+/** The few mixins used **/
+@mixin right-bottom-left-border($color) {
+  border-right: 0.175rem solid $color;
+  border-bottom: 0.175rem solid $color;
+  border-left: 0.175rem solid $color;
+}
+
+@mixin full-border($color) {
+  border: 0.2rem solid $color;
+}

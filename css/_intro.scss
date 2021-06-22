@@ -1,0 +1,20 @@
+@import 'colors';
+
+/** Styles for the intro section **/
+.intro {
+    background-color: $dark;
+    color: $gld-secondary;
+    margin-top: 6rem;
+    min-height: 100vh;
+    padding-top: 125px;
+    .h-txt-body {
+        border-right: 0.2rem solid $gld-secondary;
+        font-size: 100px;
+        letter-spacing: 3.5px;
+    }
+    .txt {
+        border-right: 0.2rem solid $gld-secondary;
+        font-size: 75px;
+        letter-spacing: 1.5px;
+    }
+}

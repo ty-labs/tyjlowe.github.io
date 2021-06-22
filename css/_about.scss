@@ -1,0 +1,25 @@
+@import 'colors';
+@import 'mixins';
+
+/** Styles for the about section **/
+.about {
+    background-color: $green-secondary;
+    .about-header {
+      color: $dark;
+      font-weight: 1000;
+      font-size: 60px;
+      letter-spacing: 2px;
+      border-bottom: 0.2rem solid $dark;
+    }
+    .about-text {
+      color: $dark;
+      font-weight: 500;
+      font-size: 19px;
+    }
+    .about-image {
+      @include full-border($dark);
+    }
+    #bolded {
+      font-size: 20px;
+    }
+  }

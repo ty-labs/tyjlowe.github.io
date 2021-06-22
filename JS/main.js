@@ -85,7 +85,7 @@ $('.nav-link').on("click", function () {
   }
 });
 
-// so navbar autocloses within the page
+// so navbar auto-closes within the page
 $('.navbar-collapse a').on("click", function() {
   $(".navbar-collapse").collapse('hide');
 });
@@ -98,8 +98,8 @@ jQuery(function() {
 // for scrolling
 function scrollWatch() {
   //cache the object with the elements, get all necessary components
-  let aboutY = $(".about").position().top - 100;
-  let projectY = $(".projects").position().top - 100;
+  let aboutY = $(".about").position().top - 65;
+  let projectY = $(".projects-and-work").position().top - 65;
   let homeLink = $("#home-link");
   let aboutLink = $("#about-link");
   let projectWorkLink = $("#project-work-link");

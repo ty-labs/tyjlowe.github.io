@@ -1,0 +1,24 @@
+@import 'colors';
+
+/** Navbar styles **/
+nav {
+    background-color: $gld-secondary;
+    .my-color {
+        font-size: 20px;
+        letter-spacing: 2.5px;
+        padding: 0px;
+        margin: 10px 10px;
+        color: $dark !important;
+        &:not(.my-color-active):hover {
+            color: $purp-secondary !important;
+            border-bottom: 3px solid $purp-secondary;
+        }
+    }
+    .my-color-active {
+            color: darken($blue-secondary, 5%) !important;
+            border-bottom: 3px solid darken($blue-secondary, 5%);
+    }
+    #contact-button {
+        text-decoration: none;
+    }
+}

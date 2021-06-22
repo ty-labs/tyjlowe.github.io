@@ -1,0 +1,74 @@
+@import 'colors';
+@import 'mixins';
+
+/** Styles for project/work section **/
+.projects-and-work {
+    background-color: $dark;
+    h2 {
+      font-weight: 1000;
+      font-size: 60px;
+      letter-spacing: 2px;
+    }
+    .projects-header {
+      color: $blue-secondary;
+      border-bottom: 0.2rem solid $blue-secondary;
+    }
+    .work-header {
+      color: $purp-secondary;
+      border-bottom: 0.2rem solid $purp-secondary;
+    }
+    .card {
+      background-color: $dark;
+      .card-header {
+        text-align: center;
+        h5 button {
+          font-size: larger;
+          font-weight: 500;
+        }
+      }
+      .card-body {
+        background-color: #F5F5F5;
+        ul li {
+          list-style-type: square;
+        }
+      }
+    }
+    .project-card .card {
+      .card-header {
+        @include full-border($blue-secondary);
+        h5 button {
+          color: $blue-secondary;
+        }
+      }
+      .card-body {
+        @include right-bottom-left-border($purp-secondary);
+      }
+    }
+    .work-card .card {
+      .card-header {
+        @include full-border($purp-secondary);
+        h5 button {
+          color: $purp-secondary;
+        }
+      }
+      .card-body {
+        @include right-bottom-left-border($blue-secondary);
+      }
+    }
+    #separator {
+      #blue-border {
+        border-bottom: 0.15rem solid $blue-secondary;
+      }
+      #purp-border {
+        border-bottom: 0.15rem solid $purp-secondary;
+      }
+    }
+    /** make the carousel controls darker **/
+    .carousel-control-next,
+    .carousel-control-prev {
+        filter: invert(100%);
+    }
+    .carousel-indicators li {
+      filter: invert(100%);
+    }
+  }

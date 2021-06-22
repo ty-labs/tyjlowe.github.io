@@ -1,0 +1,13 @@
+@import 'colors';
+
+/** Styles for the footer **/
+.footer {
+  background-color: $green-secondary;
+  .footer-link {
+    color: $dark;
+    text-decoration: none;
+  }
+  .footer-logo  {
+    vertical-align: baseline;
+  }
+}
