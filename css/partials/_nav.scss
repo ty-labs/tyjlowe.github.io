@@ -9,9 +9,11 @@ nav {
         padding: 0px;
         margin: 10px 10px;
         color: $dark !important;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.6s ease-out;
         &:not(.my-color-active):hover {
-            color: $purp-secondary !important;
-            border-bottom: 3px solid $purp-secondary;
+            color: darken($purp-secondary, 5%) !important;
+            border-bottom: 3px solid darken($purp-secondary, 5%);
         }
     }
     .my-color-active {

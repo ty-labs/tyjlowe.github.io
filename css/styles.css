@@ -14,10 +14,12 @@ nav {
     letter-spacing: 2.5px;
     padding: 0px;
     margin: 10px 10px;
-    color: #262833 !important; }
+    color: #262833 !important;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.6s ease-out; }
     nav .my-color:not(.my-color-active):hover {
-      color: #7E8CE0 !important;
-      border-bottom: 3px solid #7E8CE0; }
+      color: #697adb !important;
+      border-bottom: 3px solid #697adb; }
   nav .my-color-active {
     color: #2db7c0 !important;
     border-bottom: 3px solid #2db7c0; }

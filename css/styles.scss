@@ -1,8 +1,8 @@
 /** Combined partials to create main styles **/
-@import 'root';
-@import 'nav';
-@import 'intro';
-@import 'about';
-@import 'project-and-work';
-@import 'footer';
-@import 'media-queries';
+@import './partials/root';
+@import './partials/nav';
+@import './partials/intro';
+@import './partials/about';
+@import './partials/project-and-work';
+@import './partials/footer';
+@import './partials/media-queries';
