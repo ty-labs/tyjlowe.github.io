@@ -15,12 +15,14 @@ nav {
             color: darken($purp-secondary, 5%) !important;
             border-bottom: 3px solid darken($purp-secondary, 5%);
         }
+        cursor: pointer;
     }
     .my-color-active {
             color: darken($blue-secondary, 5%) !important;
             border-bottom: 3px solid darken($blue-secondary, 5%);
     }
     #contact-button {
+        cursor: pointer;
         text-decoration: none;
     }
 }

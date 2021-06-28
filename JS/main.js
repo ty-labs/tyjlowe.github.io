@@ -3,10 +3,9 @@ import { TypeWriter, AltTypeWriter } from './components/typewriter.js';
 // JS after page loaded
 jQuery(function() {
   init();
-  scrollWatch();
 })
 
-// init app
+// initialize JS for site
 function init() {
   setTimeout(function () {
     let textElement = $('.h-txt');
@@ -19,31 +18,45 @@ function init() {
     let wait = textElement.attr('data-wait');
     new TypeWriter(textElement, words, wait);
   }, 5050);
+  initNavbar();
+  initResizes();
 }
 
-// to change active navbar item on click
-$('.nav-link').on("click", function () {
-  let elem = $(this), navBar = elem.parent().parent();
-  navBar.find('li a').removeClass('my-color-active');
-  if (!elem.hasClass('my-color-active')) {
-  }
-});
+// initialize JS for navbar stuff
+function initNavbar() {
+  // to change active navbar item on click
+  $('.nav-link').on("click", function () {
+    let elem = $(this), navBar = elem.parent().parent();
+    navBar.find('li a').removeClass('my-color-active');
+    if (!elem.hasClass('my-color-active')) {
+      elem.addClass('my-color-active');
+    }
+  });
+  // enforce navbar collapses when clicked on mobile
+  $('.navbar-collapse a').on("click", function() {
+    $(".navbar-collapse").collapse('hide');
+  });
+  // open modal when clicked
+  $('#contact-button').on("click", function() {
+    $("#contact-modal").modal('toggle');
+  });
+}
 
-// enforce navbar collapsed on click for mobile
-$('.navbar-collapse a').on("click", function() {
-  $(".navbar-collapse").collapse('hide');
-});
+// initialize JS for scroll/click watching on resizes
+function initResizes() {
+  scrollAndClickWatch();
+  $(window).on("resize", function() {
+    scrollAndClickWatch();
+  });
+}
 
-// for scrolling
-function scrollWatch() {
-  //cache the object with the elements, get all necessary components
+function scrollAndClickWatch() {
+  console.log("Resize event happened");
   let aboutY = $(".about").position().top - 65;
-  let projectY = $(".projects-and-work").position().top - 65;
-  let homeLink = $("#home-link");
-  let aboutLink = $("#about-link");
-  let projectWorkLink = $("#project-work-link");
-  console.log(homeLink, aboutLink, projectWorkLink);
-  $(window).scroll(function() {
+  let projectY = $(".projects-and-work").position().top - 60;
+  let homeLink = $("#home-link"), aboutLink = $("#about-link"), projectWorkLink = $("#project-work-link");
+  // update navbar "active" depending on screen location 
+  $(window).on("scroll", function() {
     let scroll = $(window).scrollTop();
     if (scroll >= aboutY && scroll < projectY) {
       homeLink.removeClass("my-color-active");
@@ -58,5 +71,15 @@ function scrollWatch() {
       projectWorkLink.removeClass("my-color-active");
       aboutLink.removeClass("my-color-active");
     }
-  })
+  });
+  // update where navbar items will send user if clicked after resizing
+  aboutLink.on("click", function() {
+    window.scrollTo(0, aboutY);
+  });
+  projectWorkLink.on("click", function() {
+    window.scrollTo(0, projectY + 5);
+  });
+  homeLink.on("click", function() {
+    window.scrollTo(0, 0);
+  });
 }

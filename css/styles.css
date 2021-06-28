@@ -16,7 +16,8 @@ nav {
     margin: 10px 10px;
     color: #262833 !important;
     border-bottom: 3px solid transparent;
-    transition: border-bottom 0.6s ease-out; }
+    transition: border-bottom 0.6s ease-out;
+    cursor: pointer; }
     nav .my-color:not(.my-color-active):hover {
       color: #697adb !important;
       border-bottom: 3px solid #697adb; }
@@ -24,6 +25,7 @@ nav {
     color: #2db7c0 !important;
     border-bottom: 3px solid #2db7c0; }
   nav #contact-button {
+    cursor: pointer;
     text-decoration: none; }
 
 /** Color theme for the site **/

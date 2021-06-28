@@ -33,9 +33,9 @@
           <a class="navbar-brand mr-sm-3 mb-1 pt-0" href="#"><img src="media/tylerlogo.png" alt="logo" height="43" width="69"></a>
           <div class="collapse navbar-collapse" id="Navbar">
               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active"><a id="home-link" class="nav-link my-color my-color-active" href="#"><span class="fa fa-home fa-lg d-none d-md-inline"></span> HOME</a></li>
-                  <li class="nav-item"><a id="about-link" class="nav-link my-color" href="#about"><span class="fa fa-user fa-lg d-none d-md-inline" ></span> ABOUT</a></li>
-                  <li class="nav-item"><a id="project-work-link" class="nav-link my-color" href="#projects"><span class="fa fa-code fa-lg d-none d-md-inline"></span> PROJECTS & WORK</a></li>
+                  <li class="nav-item active"><a id="home-link" class="nav-link my-color my-color-active"><span class="fa fa-home fa-lg d-none d-md-inline"></span> HOME</a></li>
+                  <li class="nav-item"><a id="about-link" class="nav-link my-color"><span class="fa fa-user fa-lg d-none d-md-inline" ></span> ABOUT</a></li>
+                  <li class="nav-item"><a id="project-work-link" class="nav-link my-color"><span class="fa fa-code fa-lg d-none d-md-inline"></span> PROJECTS & WORK</a></li>
               </ul>
               <span class="navbar-text">
                   <a id="contact-button" class="my-color">
@@ -45,6 +45,23 @@
           </div>
       </div>
     </nav>
+
+    <!-- Contact pop-up modal --> 
+    <div id="contact-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              <span class="fa fa-times fa-md"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Jumbotron w/ animations for landing area -->
     <header class="jumbotron intro mb-0">
@@ -435,7 +452,7 @@
     </header>
 
     <!--JS scripts and plugins-->
-    <script src="JS/jquery.slim.min.js"></script>
+    <script src="JS/jquery.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/popper.min.js"></script>
     <script type="module" src="JS/main.js"></script>

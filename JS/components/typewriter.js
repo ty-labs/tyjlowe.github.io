@@ -51,4 +51,4 @@ class AltTypeWriter {
     }
 }
 
-export { TypeWriter, AltTypeWriter};
+export { TypeWriter, AltTypeWriter };
