@@ -128,6 +128,28 @@ nav {
   .footer .footer-logo {
     vertical-align: baseline; }
 
+/** Color theme for the site **/
+#contact-modal .modal-header {
+  background-color: #36C7D0;
+  border-bottom: none;
+  letter-spacing: 2.5px; }
+
+#contact-modal .modal-body {
+  background-color: #262833; }
+  #contact-modal .modal-body .modal-link {
+    color: #7E8CE0;
+    text-decoration: none;
+    font-size: larger;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s ease-out; }
+    #contact-modal .modal-body .modal-link:hover {
+      color: #2db7c0;
+      border-bottom: 2px solid #2db7c0; }
+  #contact-modal .modal-body .modal-logo {
+    vertical-align: baseline;
+    color: #7E8CE0; }
+
 /** Media Queries **/
 @media (max-width: 779px) {
   .projects-and-work .work-card .card .card-header h5 button {

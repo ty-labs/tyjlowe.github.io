@@ -1,0 +1,29 @@
+@import './colors';
+
+#contact-modal {
+    .modal-header {
+        background-color: $blue-secondary;
+        border-bottom: none;
+        letter-spacing: 2.5px;
+    }
+    .modal-body {
+        background-color: $dark;
+        .modal-link {
+            color: $purp-secondary;
+            text-decoration: none;
+            font-size: larger;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.4s ease-out;
+            &:hover {
+                color: darken($blue-secondary, 5%);
+                border-bottom: 2px solid darken($blue-secondary, 5%);
+            }
+        }
+
+        .modal-logo {
+            vertical-align: baseline;
+            color: $purp-secondary;
+        }
+    }
+}

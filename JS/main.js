@@ -51,7 +51,6 @@ function initResizes() {
 }
 
 function scrollAndClickWatch() {
-  console.log("Resize event happened");
   let aboutY = $(".about").position().top - 65;
   let projectY = $(".projects-and-work").position().top - 60;
   let homeLink = $("#home-link"), aboutLink = $("#about-link"), projectWorkLink = $("#project-work-link");
